@@ -60,30 +60,3 @@ cd ..
 cd client
 npm start
 ```
-
-## Landing Page
-
-![lndng](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/landing.jpg?raw=true)
-
-## Home Page
-
-![hm1](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/home-1.jpg?raw=true)
-![hm2](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/home-2.jpg?raw=true)
-
-## Cart Page
-
-![crt](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/cart.jpg?raw=true)
-
-## Member List And Borrower Page
-
-![memb](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/member.jpg?raw=true)
-![brw](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/borrower.jpg?raw=true)
-
-## Login And SignUp Pages
-
-![lgn](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/logins.jpg?raw=true)
-![sgnup](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/signup.jpg?raw=true)
-
-## Profile Edit Page
-
-![profile](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/profileEdit.jpg?raw=true)
