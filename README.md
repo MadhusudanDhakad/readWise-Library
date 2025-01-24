@@ -61,14 +61,6 @@ cd client
 npm start
 ```
 
-## Authors
-
-- [@AnuragRoshan](https://github.com/AnuragRoshan)
-
-## Feedback
-
-If you have any feedback, please reach out to us at anuragraushan373@gmail.com
-
 ## Landing Page
 
 ![lndng](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/landing.jpg?raw=true)
