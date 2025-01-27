@@ -1,97 +1,70 @@
-# DevRev On-Campus Project Round
+# Getting Started with Create React App
 
-Library Management using MERN is a full-stack web application that allows users to manage books, borrowers, and borrowing transactions in a library setting. It utilizes the MERN stack, which includes MongoDB for the database, Express.js for the server, React.js for the frontend, and Node.js for the backend. With this application, users can perform operations such as adding new books, tracking borrowed books, managing borrower details, and generating reports. The application provides an intuitive and user-friendly interface for efficient library management.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Tech Stack
+## Available Scripts
 
-**Client:** React, Redux
+In the project directory, you can run:
 
-**Server:** Node, Express , Passport JS , PassportJs
+### `npm start`
 
-## Features
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- User Registration and Authentication
-- Book Catalog
-- Book Search and Filters
-- Borrowing and Return Management
-- User Profile Management
-- Administrative Dashboard
-- Integration with External APIs
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Run Locally
+### `npm test`
 
-Clone the project
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-```bash
-  git clone https://github.com/AnuragRoshan/LibraryManagement.git
-```
+### `npm run build`
 
-move into LibraryManagement folder
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```bash
-cd LibraryManagement
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-move into server and install node dependencies for server side
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-```bash
-cd server
-npm i
-```
+### `npm run eject`
 
-install react dependencies in client folder
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-```bash
-cd ..
-cd client
-npm i
-```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-run node backend in other shell
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-```bash
-npm start
-```
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-run react frontend in third shell
+## Learn More
 
-```bash
-cd ..
-cd client
-npm start
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Authors
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- [@AnuragRoshan](https://github.com/AnuragRoshan)
+### Code Splitting
 
-## Feedback
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-If you have any feedback, please reach out to us at anuragraushan373@gmail.com
+### Analyzing the Bundle Size
 
-## Landing Page
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-![lndng](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/landing.jpg?raw=true)
+### Making a Progressive Web App
 
-## Home Page
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-![hm1](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/home-1.jpg?raw=true)
-![hm2](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/home-2.jpg?raw=true)
+### Advanced Configuration
 
-## Cart Page
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-![crt](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/cart.jpg?raw=true)
+### Deployment
 
-## Member List And Borrower Page
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-![memb](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/member.jpg?raw=true)
-![brw](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/borrower.jpg?raw=true)
+### `npm run build` fails to minify
 
-## Login And SignUp Pages
-
-![lgn](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/logins.jpg?raw=true)
-![sgnup](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/signup.jpg?raw=true)
-
-## Profile Edit Page
-
-![profile](https://github.com/AnuragRoshan/LibraryManagement/blob/main/client/public/web-img/profileEdit.jpg?raw=true)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

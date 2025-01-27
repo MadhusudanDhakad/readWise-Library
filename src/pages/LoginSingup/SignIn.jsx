@@ -26,6 +26,9 @@ const Signin = () => {
       const message = response.data.message;
       const status = response.data.status;
 
+      console.log(message)
+      console.log(status)
+
       if (status === "200") {
         toast.success(message, {
           position: "top-center",

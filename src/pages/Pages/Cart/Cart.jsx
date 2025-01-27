@@ -41,7 +41,7 @@ const Cart = ({ user }) => {
   }, [proceedCheckout]);
 
   if (data == null) {
-    return <>NULL H RE BABA</>;
+    return <>Your Cart is Empty.</>;
   } else
     return (
       <div style={{ paddingBlockStart: "4rem" }}>

@@ -16,8 +16,8 @@ const userSchema = mongoose.Schema(
         dob: { type: String },
         address: { type: String },
         uniqueId: { type: String, required: true },
-        borrowed: []
-        , cart: [],
+        borrowed: [],
+        cart: [],
     },
     { timestamps: true }
 );
