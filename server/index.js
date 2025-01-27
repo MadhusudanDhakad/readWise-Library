@@ -12,9 +12,8 @@ const routes = require("./api/routes/index")
 const router = require("express").Router();
 dotenv.config();
 
-
+const PORT = process.env.PORT || 4000;
 app.use(morgan("dev"));
-
 
 //database connection
 require("./db_connection");
@@ -50,9 +49,16 @@ require("./config/passportConfig")(passport);
 app.use(routes);
 
 
+app.get("/", (req, res) => {
+  res.send("Welcome to ReadWise Library Backend!");
+});
+app.use(routes);
 
+// Handle undefined routes (404 fallback)
+app.use((req, res) => {
+  res.status(404).json({ error: "Route not found" });
+});
 
-const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
     console.log("Server Is Connected to Port " + PORT);
 })
