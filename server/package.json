@@ -27,5 +27,8 @@
   "description": "",
   "devDependencies": {
     "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
