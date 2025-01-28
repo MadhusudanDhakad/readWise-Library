@@ -15,16 +15,29 @@ function App() {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const fetchData = async () => {
-    try {
-      const { data } = await axios.get(`http://localhost:5000/logedinuser/`, { withCredentials: true });
-      setUser(data.user);
-    } catch (error) {
-      // Handle error
-    } finally {
-      setIsLoading(false);
-    }
-  };
+  // const fetchData = async () => {
+  //   try {
+  //     const { data } = await axios.get(`http://localhost:5000/logedinuser/`, { withCredentials: true });
+  //     setUser(data.user);
+  //   } catch (error) {
+  //     // Handle error
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
+
+
+    const fetchData = async () => {
+      try {
+        // const { data } = await axios.get(`http://localhost:5000/logedinuser/`, { withCredentials: true });
+        const { data } = await axios.get(`${process.env.REACT_APP_BASE_URL}/logedinuser/`, { withCredentials: true });
+        setUser(data.user);
+      } catch (error) {
+        console.error("Error fetching logged-in user:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
 
   useEffect(() => {
     fetchData();
