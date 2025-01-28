@@ -1,20 +1,46 @@
 const mongoose = require("mongoose")
 
-require("dotenv").config();
+require("dotenv").config()
 
-mongoose.set("strictQuery", false);
+mongoose.set("strictQuery", false)
+
 const URL = process.env.DB_URL
-try {
 
-    mongoose.connect(URL, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true
-    });
+const connectDB = async () => {
+    try {
+        await mongoose.connect(URL, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+        console.log("Connection to the Database");
+    } catch (error) {
+        console.error("Error while connecting to the Database: ", error.message)
+        process.exit(1)
+    }
+};
 
-    console.log("Connected To Database");
+module.exports = connectDB
 
-} catch (error) {
 
-    console.log("error while loadind the data base", error);
 
-}
+
+// const mongoose = require("mongoose")
+
+// require("dotenv").config();
+
+// mongoose.set("strictQuery", false);
+// const URL = process.env.DB_URL
+// try {
+
+//     mongoose.connect(URL, {
+//         useNewUrlParser: true,
+//         useUnifiedTopology: true
+//     });
+
+//     console.log("Connected To Database");
+
+// } catch (error) {
+
+//     console.log("error while loadind the data base", error);
+
+// }
