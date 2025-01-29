@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "../../Assets/css/cart.css";
+import { useNavigate } from "react-router-dom";
 
 const Cart = ({ user }) => {
   const [data, setData] = useState([null]);
@@ -22,13 +23,15 @@ const Cart = ({ user }) => {
   const proceedCheckout = async () => {
     const username = user.username;
     const send = { username: username };
+    const navigate = useNavigate();
     await axios
       .post(`${process.env.REACT_APP_BASE_URL}/checkout`, send)
       .then((response) => {
         console.log(response);
       });
     setTimeout(() => {
-      window.location.href = "/home";
+      // window.location.href = "/home";
+      navigate("/home");
     }, 500);
   };
 
