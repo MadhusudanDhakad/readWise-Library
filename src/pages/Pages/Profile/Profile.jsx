@@ -25,7 +25,7 @@ const Profile = ({ user }) => {
   const submitForm = async () => {
     // alert("Submitted")
     await axios
-      .post(`http://localhost:5000/updateUser`, data)
+      .post(`${process.env.REACT_APP_BASE_URL}/updateUser`, data)
       .then((response) => {
         var message = response.data.msg;
         var status = response.status;
