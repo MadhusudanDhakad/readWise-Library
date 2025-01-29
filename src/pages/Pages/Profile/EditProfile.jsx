@@ -4,10 +4,12 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const EditProfile = () => {
   const { id } = useParams();
   const [user, setUser] = useState(null);
+  const navigate = useNavigate();
   const [data, setData] = useState({
     name: "",
     username: "",
@@ -54,7 +56,8 @@ const EditProfile = () => {
         textAlign: "center",
       });
       setTimeout(() => {
-        window.location.href = "/home";
+        // window.location.href = "/home";
+        navigate("/home");
       }, 1500);
     } catch (error) {
       console.error(error);
