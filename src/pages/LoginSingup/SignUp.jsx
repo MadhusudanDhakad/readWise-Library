@@ -129,8 +129,8 @@ const SignUp = () => {
             textAlign: "center",
           });
           setTimeout(() => {
-            window.location.href = "/signin";
-            // navigate("/signin");
+            // window.location.href = "/signin";
+            navigate("/signin");
           }, 1500);
           // window.location.reload();
         } else if (status === 202) {
