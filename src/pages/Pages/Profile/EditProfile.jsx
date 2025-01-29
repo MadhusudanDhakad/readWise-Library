@@ -56,8 +56,8 @@ const EditProfile = () => {
         textAlign: "center",
       });
       setTimeout(() => {
-        // window.location.href = "/home";
-        navigate("/home");
+        window.location.href = "/home";
+        // navigate("/home");
       }, 1500);
     } catch (error) {
       console.error(error);
