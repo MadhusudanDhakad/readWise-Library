@@ -45,8 +45,8 @@ const Navbar = ({ user }) => {
             textAlign: "center",
           });
           setTimeout(() => {
-            window.location.href = "/";
-            // navigate("/");
+            // window.location.href = "/";
+            navigate("/");
           }, 1500);
         } else if (status === 202) {
           toast.warn(`${message}`, {
