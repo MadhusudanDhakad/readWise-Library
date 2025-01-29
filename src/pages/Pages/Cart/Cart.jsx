@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Cart = ({ user }) => {
   const [data, setData] = useState([null]);
   const [isLoading, setIsLoading] = useState(true); // Add isLoading state
+  const navigate = useNavigate();
 
   const fetchData = async () => {
     try {
@@ -23,7 +24,6 @@ const Cart = ({ user }) => {
   const proceedCheckout = async () => {
     const username = user.username;
     const send = { username: username };
-    const navigate = useNavigate();
     await axios
       .post(`${process.env.REACT_APP_BASE_URL}/checkout`, send)
       .then((response) => {
