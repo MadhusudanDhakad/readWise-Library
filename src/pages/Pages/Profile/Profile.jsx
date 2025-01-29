@@ -43,8 +43,8 @@ const Profile = ({ user }) => {
             textAlign: "center",
           });
           setTimeout(() => {
-            // window.location.href = "/profile";
-            navigate("/profile");
+            window.location.href = "/profile";
+            // navigate("/profile");
           }, 1500);
           // window.location.reload();
         } else if (status === 202) {
