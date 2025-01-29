@@ -9,7 +9,7 @@ const Cart = ({ user }) => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/booksInCart/${user.username}`
+        `${process.env.REACT_APP_BASE_URL}/booksInCart/${user.username}`
       );
       setData(response.data.books);
       console.log(data);
@@ -23,7 +23,7 @@ const Cart = ({ user }) => {
     const username = user.username;
     const send = { username: username };
     await axios
-      .post(`http://localhost:5000/checkout`, send)
+      .post(`${process.env.REACT_APP_BASE_URL}/checkout`, send)
       .then((response) => {
         console.log(response);
       });
