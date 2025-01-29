@@ -38,8 +38,10 @@ const Signin = () => {
           draggable: true,
           textAlign: "center",
         });
-        // window.location.href = "/profile";
-        navigate("/profile");
+        setTimeout(() => {
+            // window.location.href = "/profile";
+            navigate("/profile"); 
+        }, 1500);
       } else if (status === "202") {
         toast.warn(message, {
           position: "top-center",
