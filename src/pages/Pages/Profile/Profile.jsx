@@ -3,12 +3,14 @@ import "../../Assets/css/profile.css";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 const Profile = ({ user }) => {
   const dateStr = user.createdAt;
   const date = new Date(dateStr);
   const options = { day: "numeric", month: "long", year: "numeric" };
   const formattedDate = date.toLocaleDateString("en-US", options);
+  const navigate = useNavigate();
 
   const [data, setData] = useState({
     name: user.name,
@@ -41,7 +43,8 @@ const Profile = ({ user }) => {
             textAlign: "center",
           });
           setTimeout(() => {
-            window.location.href = "/profile";
+            // window.location.href = "/profile";
+            navigate("/profile");
           }, 1500);
           // window.location.reload();
         } else if (status === 202) {
