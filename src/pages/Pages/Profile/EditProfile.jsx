@@ -20,7 +20,7 @@ const EditProfile = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/userDetail/${id}`
+          `${process.env.REACT_APP_BASE_URL}/userDetail/${id}`
         );
         setUser(response.data);
         setData({
@@ -44,7 +44,7 @@ const EditProfile = () => {
 
   const submitForm = async () => {
     try {
-      await axios.post(`http://localhost:5000/updateUser`, data);
+      await axios.post(`${process.env.REACT_APP_BASE_URL}/updateUser`, data);
       toast.success("Profile updated successfully", {
         position: "top-center",
         autoClose: 2000,
