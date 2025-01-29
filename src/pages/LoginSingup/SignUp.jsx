@@ -113,7 +113,7 @@ const SignUp = () => {
   const submitForm = async () => {
     // alert("Submitted")
     await axios
-      .post(`http://localhost:5000/register`, user)
+      .post(`${process.env.REACT_APP_BASE_URL}/register`, user)
       .then((response) => {
         var message = response.data.msg;
         var status = response.status;
