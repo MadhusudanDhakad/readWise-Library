@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import { useNavigate } from "react-router-dom";
 // const First = () => {
 //   const [user, setUser] = useState({});
 
@@ -103,7 +103,7 @@ import "react-toastify/dist/ReactToastify.css";
 // };
 const SignUp = () => {
   const [showComponent1, setShowComponent1] = useState(true);
-
+  const navigate = useNavigate();
   const [user, setUser] = useState({});
 
   const handleInputs = (e) => {
@@ -129,7 +129,8 @@ const SignUp = () => {
             textAlign: "center",
           });
           setTimeout(() => {
-            window.location.href = "/signin";
+            // window.location.href = "/signin";
+            navigate("/signin");
           }, 1500);
           // window.location.reload();
         } else if (status === 202) {
