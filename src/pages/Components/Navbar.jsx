@@ -27,7 +27,7 @@ const Navbar = ({ user }) => {
 
   const handleLogout = async () => {
     await axios
-      .post(`http://localhost:5000/logout`, null, {
+      .post(`${process.env.REACT_APP_BASE_URL}`, null, {
         withCredentials: true,
       })
       .then((response) => {
