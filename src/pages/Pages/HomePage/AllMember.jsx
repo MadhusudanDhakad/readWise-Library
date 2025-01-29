@@ -20,8 +20,8 @@ const AllMember = ({ user }) => {
         console.log(response);
       });
     setTimeout(() => {
-      // window.location.href = "/cart";
-      navigate("/cart");
+      window.location.href = "/cart";
+      // navigate("/cart");
     }, 500);
   };
   // console.log(selectedBooks);
