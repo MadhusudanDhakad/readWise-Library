@@ -24,7 +24,7 @@ const Lists = ({ user }) => {
     const send = { books: books, username: username };
     console.log(send);
     await axios
-      .post(`http://localhost:5000/addToCart`, send, {})
+      .post(`${process.env.REACT_APP_BASE_URL}/addToCart`, send, {})
       .then((response) => {
         console.log(response);
       });
@@ -41,9 +41,9 @@ const Lists = ({ user }) => {
       search = "-";
     }
 
-    const response = await axios.get(`http://localhost:5000/search/${search}`);
+    const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/search/${search}`);
     if (response.length == 0) {
-      response = await axios.get(`http://localhost:5000/allBook`);
+      response = await axios.get(`${process.env.REACT_APP_BASE_URL}/allBook`);
     }
     setData(response.data.books);
     // }, 1500);
