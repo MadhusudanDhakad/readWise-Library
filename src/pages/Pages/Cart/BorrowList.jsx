@@ -26,7 +26,7 @@ const BorrowList = () => {
 
   const fetchData = async () => {
     // setInterval(async () => {
-    const response = await axios.get("http://localhost:5000/borrowedBooks");
+    const response = await axios.get(`${process.env.REACT_APP_BASE_URL}`);
     setData(response.data);
     // }, 1500);
     console.log(response.data);
