@@ -30,8 +30,8 @@ const Cart = ({ user }) => {
         console.log(response);
       });
     setTimeout(() => {
-      window.location.href = "/home";
-      // navigate("/home");
+      // window.location.href = "/home";
+      navigate("/home");
     }, 500);
   };
 
